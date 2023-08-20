@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald&family=Roboto&display=swap');
+
+
+body{
+    padding: 1rem .3rem;
+    font-family: var(--font-family);
+    background-color: rgb(247, 247, 247);
+}
+
+#wrapper{
+    width: 400px;
+}
+
+#wrapper button {
+    padding: 0.3rem 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    box-shadow: 3px 5px 10px black;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    outline: none;
+}
+
+#wrapper button:hover{
+    box-shadow: 1px 2px 5px black; 
+    transform: translateY(2px);
+}
+
+#wrapper button:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.result{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid;
+}
+.result .summary{
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.result .title{
+    width: 80%;
+}
+
+.hidden{
+    display: none;
+}
+
+#error{
+    background-color: rgb(118, 14, 14);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+#error p{
+    margin: 0;
+}
